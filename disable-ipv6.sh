@@ -18,7 +18,7 @@ fi
 
 # 检查是否已禁用IPv6
 if sysctl net.ipv6.conf.all.disable_ipv6 | grep -q "1"; then
-  green_echo "IPv6已被禁用。"
+  green_echo "IPv6已被禁用过，退出脚本。"
   exit 0
 fi
 
